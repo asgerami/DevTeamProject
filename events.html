@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">CSEC</label>
+    <ul>
+      <li><a class="#" href="index.html">Dashboard</a></li>
+      <li><a href="active">Events</a></li>
+      <li><a href="members.html">Members Area</a></li>
+    </ul>
+  </nav>
+
+    <h2>Event Management</h2>
+
+    <div class="event-management">
+        <button class="button" onclick="addEvent()">Add Event</button>
+        <button class="button" onclick="editEvent()">Edit Event</button>
+        <button class="button" onclick="deleteEvent()">Delete Event</button>
+    </div>
+
+    <div id="calendar"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha512-Gn5384xq1ii1+FXDY7N9t0J6DbpIi9Q9Rj7sNc2aK6dQyVxzk2w5H2QExaVcK6Cf6nGECBe3WcF2sLwXhGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-x64UZp3N9FNzqCsk8ZKN5uY1OJ6DbpIi9Q9Rj7sNc2aK6dQyVxzk2w5H2QExaVcK6Cf6nGECBe3WcF2sLwXhGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.js" integrity="sha512-AeZfII5+PLeAn60S8F4w5kp5eRwCZ+agIbDs9A8N8H0QG0oy9+dq1TzxMjSbLp4kR3OwZX8dCvdMmDE3b5d8lA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
