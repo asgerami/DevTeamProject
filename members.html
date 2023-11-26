@@ -15,12 +15,130 @@
       </label>
       <label class="logo">CSEC</label>
       <ul>
-        <li><a class="index.html" href="#">Dashboard</a></li>
+        <li><a class="index.html" href="index.html">Dashboard</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="active">Members Area</a></li>
       </ul>
     </nav>
-    <section></section>
+    <section>
+      <header>
+        <h2>Add Member</h2>
+    </header>
+      <form id="memberForm">
+        <label for="memberID">Member ID:</label>
+        <input type="text" id="memberID" required>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required>
+        <label for="age">Age:</label>
+        <input type="number" id="age" required>
+        <label for="department">Department:</label>
+        <input type="text" id="department" required>
+        <label for="joiningDate">Joining Date:</label>
+        <input type="date" id="joiningDate" required>
+        <button type="button" onclick="addMember()">Add Member</button>
+    </form>
+      <table>
+        <thead>
+            <tr>
+                <th>Member ID</th>
+                <th>Full Name</th>
+                <th>Age</th>
+                <th>Department</th>
+                <th>Joining Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Abebe Kebede</td>
+                <td>28</td>
+                <td>Software Engineering</td>
+                <td>2022-01-01</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Meskerem Yohannes</td>
+                <td>25</td>
+                <td>Computer Science</td>
+                <td>2022-02-15</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Kalkidan Mengistu</td>
+                <td>30</td>
+                <td>Communication Engineering</td>
+                <td>2022-03-20</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Yoseph Tadesse</td>
+                <td>26</td>
+                <td>Power and Control Engineering</td>
+                <td>2022-04-10</td>
+            </tr>
+            <tr>
+                <td>005</td>
+                <td>Genet Assefa</td>
+                <td>29</td>
+                <td>Software Engineering</td>
+                <td>2022-05-05</td>
+            </tr>
+            <tr>
+                <td>006</td>
+                <td>Biniam Gebre</td>
+                <td>31</td>
+                <td>Computer Science</td>
+                <td>2022-06-12</td>
+            </tr>
+            <tr>
+                <td>007</td>
+                <td>Lulit Bekele</td>
+                <td>27</td>
+                <td>Communication Engineering</td>
+                <td>2022-07-18</td>
+            </tr>
+            <tr>
+                <td>008</td>
+                <td>Dawit Solomon</td>
+                <td>32</td>
+                <td>Power and Control Engineering</td>
+                <td>2022-08-22</td>
+            </tr>
+            <tr>
+                <td>009</td>
+                <td>Betelhem Yimer</td>
+                <td>24</td>
+                <td>Software Engineering</td>
+                <td>2022-09-30</td>
+            </tr>
+            <tr>
+                <td>010</td>
+                <td>Tigist Kassahun</td>
+                <td>28</td>
+                <td>Computer Science</td>
+                <td>2022-10-15</td>
+            </tr>
+            <tr>
+                <td>011</td>
+                <td>Mulu Ayele</td>
+                <td>29</td>
+                <td>Communication Engineering</td>
+                <td>2022-11-05</td>
+            </tr>
+            <tr>
+                <td>012</td>
+                <td>Bereket Tesfaye</td>
+                <td>26</td>
+                <td>Power and Control Engineering</td>
+                <td>2022-12-12</td>
+            </tr>
+        </tbody>
+      </table>
+      
+    </section>
+
+<script src="script5.js"></script>
+    </section>
   <footer>
     <p>&copy; 2023 Club Management System</p>
   </footer>

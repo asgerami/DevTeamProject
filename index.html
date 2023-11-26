@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Club Management System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="script4.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   </head>
   <body>
@@ -20,6 +20,132 @@
         <li><a href="members.html">Members Area</a></li>
       </ul>
     </nav>
-    <section></section>
+      <div class="content">
+          <div class="cards">
+              <div class="card">
+                  <div class="box">
+                      <h1>922</h1>
+                      <h3>Members</h3>
+                  </div>
+                  <div class="icon-case">
+                      <img src="User_Icon.png" alt="">
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="box">
+                      <h1>53</h1>
+                      <h3>Teachers</h3>
+                  </div>
+                  <div class="icon-case">
+                      <img src="teachers.png" alt="">
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="box">
+                      <h1>123</h1>
+                      <h3>ICPC</h3>
+                  </div>
+                  <div class="icon-case">
+                      <img src="school.png" alt="">
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="box">
+                      <h1>21</h1>
+                      <h3>Events</h3>
+                  </div>
+                  <div class="icon-case">
+                      <img src="events.png" alt="">
+                  </div>
+              </div>
+          </div>
+          <div class="content-2">
+              <div class="recent-payments">
+                  <div class="title">
+                      <h2>Recent Members</h2>
+                      <a href="members.html" class="btn">View All</a>
+                  </div>
+                  <table>
+                      <tr>
+                        
+                          <th>Profile</th>
+                          <th>Name</th>
+                          <th>Department</th>
+                          <th>ID</th>
+                          <th>Option</th>
+                      </tr>
+                      <tr>
+                          <td><img src="profile.png" alt=""></td>
+                          <td>Amir Aman</td>
+                          <td>Software Engineering</td>
+                          <td>UGR/25370/14</td>
+                          <td><a href="#" class="btn">View</a></td>
+                      </tr>
+                      <tr>
+                          <td><img src="profile.png" alt=""></td>
+                          <td>Abebe Tefera</td>
+                          <td>Computer Science</td>
+                          <td>UGR/25370/14</td>
+                          <td><a href="#" class="btn">View</a></td>
+                      </tr>
+                      <tr>
+                          <td><img src="profile.png" alt=""></td>
+                          <td>Chala Tesema</td>
+                          <td>Electrical Engineering</td>
+                          <td>UGR/25370/14</td>
+                          <td><a href="#" class="btn">View</a></td>
+                      </tr>
+                      <tr>
+                          <td><img src="profile.png" alt=""></td>
+                          <td>Rock Lee</td>
+                          <td>Software Engineering</td>
+                          <td>UGR/25370/14</td>
+                          <td><a href="#" class="btn">View</a></td>
+                      </tr>
+                      <tr>
+                          <td><img src="profile.png" alt=""></td>
+                          <td>Naruto Uzumaki</td>
+                          <td>Communication Engineering</td>
+                          <td>UGR/25370/14</td>
+                          <td><a href="#" class="btn">View</a></td>
+                      </tr>
+                      <tr>
+                          <td><img src="profile.png" alt=""></td>
+                          <td>Sasuke Uchiha</td>
+                          <td>Power and Control Engineering</td>
+                          <td>UGR/25370/14</td>
+                          <td><a href="#" class="btn">View</a></td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+          <div class="calendar-container">
+            <div class="calendar-header">
+              <h1>Event Calendar</h1>
+            </div>
+            <div class="calendar">
+            </div>
+            <div class="event-form">
+              <h2>Add Event</h2>
+              <form id="eventForm">
+                <label for="eventName">Event Name:</label>
+                <input type="text" id="eventName" required>
+              
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" required>
+              
+                <label for="eventTime">Event Time:</label>
+                <input type="time" id="eventTime" required>
+              
+                <label for="eventPlace">Event Place:</label>
+                <input type="text" id="eventPlace" required>
+              
+                <button type="button" onclick="addEvent()">Add Event</button>
+              </form>
+            </div>
+          </div>
+          <script src="scripts.js"></script>
+      </div>
+  </div>
   </body>
 </html>
