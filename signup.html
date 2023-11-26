@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,24 +35,29 @@
       <label for="bio">Bio:</label>
       <textarea id="bio" name="user_bio"></textarea>
     </fieldset>
-    <fieldset>
-    <label for="job">Role:</label>
-    <select id="job" name="user_job">
-  
-        <option value="Adminstrator">Admin</option>
-        <option value="Moderator">Maintenance</option>
-        <option value="Member">Member</option>
-      
-    </select>
     
-      <label>Interests:</label>
-      <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
-        <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
-      <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
-      <label for="other">Other:</label>
-      <input type="text" id="other" name="other">
+    <fieldset>
+        <label for="job">Role:</label>
+        <select id="job" name="user_job">
+            <option value="Adminstrator">Admin</option>
+            <option value="Moderator">Maintenance</option>
+            <option value="Member">Member</option>
+        </select>
+    
+        <label>Interests:</label>
+        <input type="checkbox" id="development" value="interest_development" name="user_interest">
+        <label class="light" for="development">Development</label><br>
+        <input type="checkbox" id="design" value="interest_design" name="user_interest">
+        <label class="light" for="design">Design</label><br>
+        <input type="checkbox" id="business" value="interest_business" name="user_interest">
+        <label class="light" for="business">Business</label>
+    
+        <label for="other">Other:</label>
+        <input type="text" id="other" name="other">
     </fieldset>
+
     <button type="submit">Sign Up</button>
+    <a href="login.html" class="return-btn">Return to Login Page</a>
   </form>
   
 </body>
